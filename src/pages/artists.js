@@ -7,7 +7,7 @@ import Footer from "@/components/Footer";
 
 export default function Artists() {
   const artists = [
-    { name: "Gus Kemp" },
+    { name: "Guus Kemp" },
     { name: "Lindsey Nobel" },
     { name: "Julon Pinkston" },
     { name: "Zoya Tommy" },
@@ -21,13 +21,15 @@ export default function Artists() {
     { name: "Peter Zelle" },
   ];
   return (
-    <main className="">
-      <h1>Artists</h1>
-      <div className="grid">
+    <Fragment>
+      <div className="pt-12 flex justify-center">
+        <h1 className="typeface-seasons text-7xl m-auto">Our Artists</h1>
+      </div>
+      <div class="p-32 pt-12 grid grid-cols-4 gap-6">
         {artists.map((artist, id) => (
           <ArtistTile key={id} artist={artist} />
         ))}
       </div>
-    </main>
+    </Fragment>
   );
 }

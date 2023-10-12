@@ -3,10 +3,26 @@ import React from "react";
 import Link from "next/link";
 
 export default function ArtistTile(props) {
+  const thumbnail =
+    "/images/thumbnails/" +
+    props.artist.name.toLowerCase().split(" ").join("-") +
+    "-thumbnail.jpg";
+  console.log(thumbnail);
   return (
-    <div className="bg-red-300">
-      <Image alt={props.artist.name} src={props.artist.image} />
-      <h1>{props.artist.name}</h1>
-    </div>
+    <Link
+      href="/"
+      className="rounded-lg bg-gray-200 w-200 grid m-5 p-5 justify-center content-center hover:shadow-md"
+    >
+      <Image
+        className="block"
+        width="400"
+        height="400"
+        alt={props.artist.name}
+        src={thumbnail}
+      />
+      <h1 className="pt-4 text-black text-xl text-center">
+        {props.artist.name}
+      </h1>
+    </Link>
   );
 }

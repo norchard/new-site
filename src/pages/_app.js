@@ -1,5 +1,6 @@
 import "@/styles/globals.css";
 import Layout from "@/components/Layout";
+import "dotenv/config";
 // import "tw-elements/dist/css/tw-elements.min.css";
 
 export default function App({ Component, pageProps }) {

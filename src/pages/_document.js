@@ -5,6 +5,7 @@ export default function Document() {
   return (
     <Html lang="en">
       <Head />
+      <link rel="stylesheet" href="https://use.typekit.net/ecb4qte.css" />
       <Script
         src="../node_modules/tw-elements/dist/js/tw-elements.umd.min.js"
         strategy="beforeInteractive"

@@ -1,3 +1,19 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body {
+  font-family: "ff-real-text-pro", sans-serif;
+}
+
+button {
+  font-family: "ff-real-text-pro", sans-serif;
+  font-weight: 500;
+  /* text-transform: uppercase; */
+  letter-spacing: 2px;
+  font-size: 8px;
+}
+
+.typeface-seasons {
+  font-family: "the-seasons", sans-serif;
+}
