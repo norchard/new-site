@@ -4,7 +4,7 @@ import Link from "next/link";
 
 export default function Nav() {
   return (
-    <header className="pb-20">
+    <header className="p-11 pb-20 relative">
       <Link href="/">
         <Image
           className="float-left"
@@ -32,6 +32,12 @@ export default function Nav() {
           href="/artists"
         >
           Handbags
+        </Link>
+        <Link
+          className="text-xl mt-5 mr-6 text-gray-500 hover:text-gray-800"
+          href="/contact"
+        >
+          Contact
         </Link>
       </nav>
     </header>

@@ -8,7 +8,9 @@ import { Fragment } from "react";
 export default function About() {
   return (
     <Fragment>
-      <div className="relative w-full flex gap-6 snap-x snap-mandatory overflow-x-auto pb-14">
+      <h1>Zoya Tommy</h1>
+      <Image src="" />
+      {/* <div className="relative w-full flex gap-6 snap-x snap-mandatory overflow-x-auto pb-14">
         <div className="snap-center shrink-0">
           <Image
             width="320"
@@ -32,7 +34,7 @@ export default function About() {
         <div className="snap-center shrink-0">
           <img src="https://images.unsplash.com/photo-1559333086-b0a56225a93c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=320&h=160&q=80" />
         </div>
-      </div>
+      </div> */}
     </Fragment>
   );
 }
