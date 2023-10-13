@@ -11,7 +11,7 @@ export default function ArtistTile(props) {
   return (
     <Link
       href="/"
-      className="rounded-lg bg-gray-200 w-200 grid m-5 p-5 justify-center content-center hover:shadow-md"
+      className="rounded-lg bg-slate-200 w-200 grid m-5 p-5 justify-center content-center hover:shadow-md"
     >
       <Image
         className="block"

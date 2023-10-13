@@ -8,15 +8,16 @@ import { Fragment } from "react";
 export default function About() {
   return (
     <Fragment>
-      <div className="min-h-screen flex">
-        <div className="flex-2 p-12 pl-52 pt-20">
+      <section className="h-screen grid grid-cols-1 lg:grid-cols-5 -mb-32">
+        <div className="lg:p-12 mr-auto ml-auto xs:pt-20 lg:pt-28 lg:col-span-2">
           <Image width="500" height="200" src="/zoya-tommy.webp" />
         </div>
-        <div className="flex-1 pl-10 pt-28 pr-60">
-          <h1 className="typeface-seasons text-6xl">
-            Zoya Tommy is a RISD-trained painter and gallerist.
+        <div className="flex-1 xs:pt-10 xs:pl-12 xs:pr-12 xs:pb-32 md:pr-32 md:pl-32 lg:pl-0 lg:col-span-3 lg:pt-32 lg:pb-0">
+          {/* <div className="flex-1 sm:pl-12 sm:pr-12 lg:pl-0 pt-28 pr-32 pb-52 min-w-600 max-w-500 md:ml-auto md:mr-auto md:w-300 md:pl-32 "> */}
+          <h1 className="xs:pb-10 md:pb-2 typeface-seasons xs:text-5xl md:text-6xl lg:text-7xl">
+            Zoya Tommy is a RISD-trained painter & gallerist.
           </h1>
-          <p className="text-lg mt-10">
+          <p className="text-lg lg:mt-10 md:mt-5">
             For the past decade, Zoya Tommy Kemp has been dedicated to
             representing contemporary artists from diverse cultural traditions.
             Originally from Trinidad, she completed her BA at the Rhode Island
@@ -35,7 +36,7 @@ export default function About() {
             their lives.
           </p>
         </div>
-      </div>
+      </section>
       {/* <div className="relative w-full flex gap-6 snap-x snap-mandatory overflow-x-auto pb-14">
         <div className="snap-center shrink-0">
           <Image

@@ -9,7 +9,9 @@ export default function Contact() {
   return (
     <Fragment>
       <div className="pt-12 flex justify-center">
-        <h1 className="typeface-seasons text-7xl m-auto">Contact</h1>
+        <h1 className="typeface-seasons text-7xl m-auto">
+          Visit Us Any Second Saturday!
+        </h1>
       </div>
       <div className="min-h-screen flex">
         <div className="flex-2 p-12 pl-52 pt-20">
