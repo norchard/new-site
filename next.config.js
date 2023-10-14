@@ -3,7 +3,7 @@ const nextConfig = {
   reactStrictMode: false,
   distDir: "dist",
   images: {
-    domains: ["images.unsplash.com"],
+    domains: ["images.unsplash.com", "cdn.sanity.io"],
   },
 };
 

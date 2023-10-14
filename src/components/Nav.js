@@ -12,6 +12,7 @@ export default function Nav() {
           alt="zoya logo"
           width={200}
           height={20}
+          priority={true}
         />
       </Link>
       <nav className="flex float-right">

@@ -23,12 +23,6 @@ export default function Home() {
             </Link>
           </div>
         </div>
-        {/* <Image
-          src="/zoya-studio.jpg"
-          alt="zoya studio"
-          width={1200}
-          height={800}
-        /> */}
       </section>
     </Fragment>
   );

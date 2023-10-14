@@ -2,6 +2,7 @@ import React, { Fragment, useState } from "react";
 import Image from "next/image";
 // import { Lightbox, initTE } from "tw-elements";
 import Map from "../components/Map";
+import Link from "next/link";
 
 export default function Contact() {
   //   initTE({ Lightbox });
@@ -13,14 +14,31 @@ export default function Contact() {
           Visit Us Any Second Saturday!
         </h1>
       </div>
-      <div className="min-h-screen flex">
-        <div className="flex-2 p-12 pl-52 pt-20">
-          <Map address="1600 Amphitheatre Parkway, Mountain View, CA" />
+      <div className="min-h-screen grid grid-cols-2">
+        <div className="">
+          {/* <Map address="1600 Amphitheatre Parkway, Mountain View, CA" /> */}
         </div>
         <div className="flex-1 pl-10 pt-28 pr-60">
-          <h1 className="typeface-seasons text-6xl">Silo at Sawyer Studios</h1>
-          <p className="text-lg mt-10">Phone: 713-</p>
-          <p className="text-lg mt-10">Phone: 713-</p>
+          1502 Sawyer St
+          <br />
+          Studio #136
+          <br />
+          The Silos at Sawyer Yards
+          <br />
+          Houston, TX 77007
+          <br />
+          <br />
+          <p>zoyatommy@gmail.com</p>
+          <p>(347) 461– 6543</p>
+          <br />
+          <br />
+          <Link
+            target="_blank"
+            href="https://www.sawyeryards.com/events/second-saturday"
+            className="mt-10 pt-2 pb-2 pr-5 pl-5 bg-slate-800 text-base rounded-full text-white hover:bg-slate-700"
+          >
+            Learn more about Second Saturdays
+          </Link>
         </div>
       </div>
     </Fragment>
