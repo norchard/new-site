@@ -8,7 +8,7 @@ import { Fragment } from "react";
 export default function About() {
   return (
     <Fragment>
-      <section className="md:h-full lg:h-[calc(100vh-125px)] grid grid-cols-1 lg:grid-cols-5 pb-20">
+      <section className="md:h-full lg:h-full grid grid-cols-1 lg:grid-cols-5 pb-20">
         <div className="lg:p-12 mr-auto ml-auto xs:pt-20 lg:pt-28 lg:col-span-2">
           <Image
             alt="Zoya Tommy"
@@ -17,7 +17,7 @@ export default function About() {
             src="/zoya-tommy.webp"
           />
         </div>
-        <div className="flex-1 xs:pt-10 xs:pl-12 xs:pr-12 xs:pb-32 md:pr-32 md:pl-32 lg:pl-0 lg:col-span-3 lg:pt-32 lg:pb-0">
+        <div className="flex-1 xs:pt-10 xs:pl-12 xs:pr-12 xs:pb-32 md:pr-32 md:pl-32 lg:pl-0 lg:col-span-3 lg:pt-32 lg:pb-20 lg:pr-72">
           {/* <div className="flex-1 sm:pl-12 sm:pr-12 lg:pl-0 pt-28 pr-32 pb-52 min-w-600 max-w-500 md:ml-auto md:mr-auto md:w-300 md:pl-32 "> */}
           <h1 className="xs:pb-10 md:pb-2 typeface-seasons xs:text-5xl md:text-6xl lg:text-7xl">
             Zoya Tommy is a RISD-trained painter & gallerist.

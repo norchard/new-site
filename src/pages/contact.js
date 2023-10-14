@@ -1,24 +1,20 @@
 import React, { Fragment, useState } from "react";
-import Image from "next/image";
-// import { Lightbox, initTE } from "tw-elements";
 import Map from "../components/Map";
 import Link from "next/link";
 
 export default function Contact() {
-  //   initTE({ Lightbox });
-
   return (
     <Fragment>
-      <div className="pt-12 flex justify-center">
+      <div className="h-xl pt-12 flex justify-center">
         <h1 className="typeface-seasons text-7xl m-auto">
           Visit Us Any Second Saturday!
         </h1>
       </div>
       <div className="min-h-screen grid grid-cols-2">
-        <div className="">
-          {/* <Map address="1600 Amphitheatre Parkway, Mountain View, CA" /> */}
+        <div className="pt-20">
+          <Map />
         </div>
-        <div className="flex-1 pl-10 pt-28 pr-60">
+        <div className="flex-1 text-xl pl-10 pt-28 pr-60">
           1502 Sawyer St
           <br />
           Studio #136

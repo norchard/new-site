@@ -1,30 +1,34 @@
 import { useState, useEffect } from "react";
-import loader from "../../googleMapsLoader";
 
-const Map = ({ address }) => {
+const Map = () => {
   const [map, setMap] = useState(null);
   useEffect(() => {
-    loader.load().then(() => {
-      const geocoder = new window.google.maps.Geocoder();
-      geocoder.geocode({ address }, (results, status) => {
-        if (status === "OK") {
-          const mapOptions = {
-            center: results[0].geometry.location,
-            zoom: 16,
-          };
-          const newMap = new window.google.maps.Map(
-            document.getElementById("map"),
-            mapOptions
-          );
-          const marker = new window.google.maps.Marker({
-            position: results[0].geometry.location,
-            map: newMap,
-          });
-          setMap(newMap);
-        }
-      });
+    mapboxgl.accessToken =
+      "pk.eyJ1Ijoibm9yY2gyIiwiYSI6ImNsbnBjeWoxOTBscGwyb3FtODUyMmJvODUifQ.MyQTyeDY3IUX7ivhEKpzGw";
+    const map = new mapboxgl.Map({
+      container: "map",
+      // Choose from Mapbox's core styles, or make your own style with Mapbox Studio
+      style: "mapbox://styles/mapbox/streets-v12",
+      center: [-95.3825, 29.7719444],
+      zoom: 12,
     });
-  }, [address]);
-  return <div id="map" style={{ height: "400px" }}></div>;
+
+    var popup = new mapboxgl.Popup()
+      .setText("Silos at Sawyer Yards")
+      .addTo(map);
+
+    // Create a default Marker and add it to the map.
+    const marker1 = new mapboxgl.Marker()
+      .setLngLat([-95.3825, 29.7719444])
+      .addTo(map)
+      .setPopup(popup);
+  }, []);
+
+  return (
+    <div
+      id="map"
+      style={{ height: "600px", width: "600px", float: "right" }}
+    ></div>
+  );
 };
 export default Map;

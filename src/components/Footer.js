@@ -45,19 +45,18 @@ export default function Footer() {
         <Link href="/">
           <Image
             className="float-left"
-            src="/Zoya_logo.png"
+            src="/icons8-facebook.svg"
             alt="zoya logo"
-            width={150}
+            width={50}
             height={20}
           />
         </Link>
-        <br />
-        <Link href="/">
+        <Link href="https://instagram.com/zoyapkemp">
           <Image
             className="float-left"
-            src="/Zoya_logo.png"
+            src="/icons8-instagram.svg"
             alt="zoya logo"
-            width={150}
+            width={50}
             height={20}
           />
         </Link>
