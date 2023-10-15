@@ -1,7 +1,6 @@
 import { useRouter } from "next/router";
 import { useState, useEffect } from "react";
 import ArtworkTile from "@/components/ArtworkTile";
-import { Lightbox, initTE } from "tw-elements";
 import Head from "next/head";
 
 export default function Page() {
@@ -9,7 +8,6 @@ export default function Page() {
   const [bio, setBio] = useState("");
   const [collection, setCollection] = useState([]);
   const router = useRouter();
-  initTE({ Lightbox });
 
   const toTitleCase = (str) => {
     return str.replace(/\w\S*/g, function (txt) {
@@ -18,6 +16,11 @@ export default function Page() {
   };
 
   useEffect(() => {
+    (async () => {
+      const { initTE, Lightbox } = await import("tw-elements");
+      initTE({ Lightbox });
+    })();
+
     if (router.isReady) {
       const artist = router.query.artist
         .split("-")

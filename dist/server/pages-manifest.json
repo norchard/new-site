@@ -1,10 +1,13 @@
 {
   "/_app": "pages/_app.js",
+  "/artists/[artist]": "pages/artists/[artist].html",
+  "/api/hello": "pages/api/hello.js",
+  "/about": "pages/about.html",
+  "/contact": "pages/contact.html",
+  "/handbags": "pages/handbags.html",
+  "/": "pages/index.html",
   "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
-  "/about": "pages/about.js",
-  "/artists": "pages/artists.js",
-  "/": "pages/index.js",
-  "/artists/[artist]": "pages/artists/[artist].js",
-  "/contact": "pages/contact.js"
+  "/artists": "pages/artists.html",
+  "/404": "pages/404.html"
 }

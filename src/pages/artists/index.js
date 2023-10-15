@@ -25,7 +25,7 @@ export default function Artists() {
         });
         setArtists(artists);
       });
-  }, []);
+  }, [URL]);
 
   return (
     <Fragment>

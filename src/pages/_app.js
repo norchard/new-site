@@ -1,17 +1,10 @@
 import "@/styles/globals.css";
 import Layout from "@/components/Layout";
 import "dotenv/config";
-import { useEffect } from "react";
+// import { useEffect } from "react";
 import "tw-elements/dist/css/tw-elements.min.css";
 
 export default function App({ Component, pageProps }) {
-  useEffect(() => {
-    const use = async () => {
-      (await import("tw-elements")).default;
-    };
-    use();
-  }, []);
-
   return (
     <Layout>
       <Component {...pageProps} />
