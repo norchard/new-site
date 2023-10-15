@@ -22,7 +22,7 @@ export default function About() {
           <h1 className="xs:pb-10 md:pb-2 typeface-seasons xs:text-5xl md:text-6xl lg:text-7xl">
             Zoya Tommy is a RISD-trained painter & gallerist.
           </h1>
-          <p className="text-lg lg:mt-10 md:mt-5">
+          <p className="prose-stone text-lg lg:mt-10 md:mt-5">
             For the past decade, Zoya Tommy Kemp has been dedicated to
             representing contemporary artists from diverse cultural traditions.
             Originally from Trinidad, she completed her BA at the Rhode Island

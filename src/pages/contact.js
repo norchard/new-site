@@ -11,7 +11,7 @@ export default function Contact() {
         </h1>
       </div> */}
       <div className=" flex flex-wrap flex-col-reverse lg:flex-row mt-12 lg:mt-28">
-        <div className="sm:w-full lg:w-1/2">
+        <div className="mb-32 sm:w-full lg:w-1/2">
           {/* <div className="flex-1 w-full pt-20"> */}
           <Map />
         </div>
