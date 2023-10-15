@@ -1,10 +1,15 @@
 import React, { Fragment, useState } from "react";
 import Map from "../components/Map";
 import Link from "next/link";
+import Head from "next/head";
 
 export default function Contact() {
   return (
     <Fragment>
+      <Head>
+        <title>Contact | Zoya</title>
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+      </Head>
       {/* <div className="h-xl pt-12 flex justify-center">
         <h1 className="typeface-seasons text-7xl m-auto">
           Visit Us Any Second Saturday!

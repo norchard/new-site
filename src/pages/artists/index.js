@@ -1,9 +1,8 @@
 import React, { Fragment, useState, useEffect } from "react";
 import Image from "next/image";
 import { Inter } from "next/font/google";
-import Header from "@/components/Nav";
 import ArtistTile from "@/components/ArtistTile";
-import Footer from "@/components/Footer";
+import Head from "next/head";
 
 export default function Artists() {
   const [artists, setArtists] = useState([]);
@@ -30,6 +29,10 @@ export default function Artists() {
 
   return (
     <Fragment>
+      <Head>
+        <title>Artists | Zoya</title>
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+      </Head>
       <div className="pt-12 flex justify-center">
         <h1 className="typeface-seasons text-7xl m-auto">Our Artists</h1>
       </div>

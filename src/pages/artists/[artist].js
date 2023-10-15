@@ -2,6 +2,7 @@ import { useRouter } from "next/router";
 import { useState, useEffect } from "react";
 import ArtworkTile from "@/components/ArtworkTile";
 import { Lightbox, initTE } from "tw-elements";
+import Head from "next/head";
 
 export default function Page() {
   const [artist, setArtist] = useState("");
@@ -56,6 +57,10 @@ export default function Page() {
 
   return (
     <>
+      <Head>
+        <title>{artist} | Zoya</title>
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+      </Head>
       <div className="pt-12 grid justify-center">
         <h1 className="typeface-seasons text-7xl m-auto">{artist}</h1>
         {bio &&

@@ -1,13 +1,16 @@
 import React from "react";
 import Image from "next/image";
 import { Inter } from "next/font/google";
-import Header from "@/components/Nav";
-import Footer from "@/components/Footer";
 import { Fragment } from "react";
+import Head from "next/head";
 
 export default function About() {
   return (
     <Fragment>
+      <Head>
+        <title>About | Zoya</title>
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+      </Head>
       <section className="md:h-full lg:h-full grid sm:grid-cols-1 lg:grid-cols-5 pb-20">
         <div className="lg:p-12 mr-auto ml-auto xs:pt-20 lg:pt-28 lg:col-span-2">
           <Image
