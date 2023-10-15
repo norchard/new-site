@@ -37,6 +37,11 @@
       "static/chunks/main.js",
       "static/chunks/pages/artists.js"
     ],
+    "/artists/[artist]": [
+      "static/chunks/webpack.js",
+      "static/chunks/main.js",
+      "static/chunks/pages/artists/[artist].js"
+    ],
     "/contact": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",

@@ -33,7 +33,7 @@ export default function Artists() {
       <div className="pt-12 flex justify-center">
         <h1 className="typeface-seasons text-7xl m-auto">Our Artists</h1>
       </div>
-      <div class="p-32 pt-12 grid sm:grid-cols-2 sm:gap-2 md:grid-cols-3 md:gap-4 lg:grid-cols-4 lg:gap-6">
+      <div className="p-32 pt-12 grid sm:grid-cols-2 sm:gap-2 md:grid-cols-3 md:gap-4 lg:grid-cols-4 lg:gap-6">
         {artists.map((artist, id) => (
           <ArtistTile key={id} artist={artist.name} image={artist.image} />
         ))}

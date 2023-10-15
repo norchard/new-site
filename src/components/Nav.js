@@ -28,12 +28,12 @@ export default function Nav() {
         >
           Artists
         </Link>
-        <Link
+        {/* <Link
           className="text-xl mt-5 mr-6 text-gray-500 hover:text-gray-800"
           href="/handbags"
         >
           Handbags
-        </Link>
+        </Link> */}
         <Link
           className="text-xl mt-5 mr-6 text-gray-500 hover:text-gray-800"
           href="/contact"

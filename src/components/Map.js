@@ -27,7 +27,12 @@ const Map = () => {
   return (
     <div
       id="map"
-      style={{ height: "600px", width: "600px", float: "right" }}
+      style={{
+        height: "600px",
+        width: "600px",
+        marginLeft: "auto",
+        marginRight: "auto",
+      }}
     ></div>
   );
 };

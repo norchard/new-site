@@ -10,11 +10,11 @@ export default function Page() {
   const router = useRouter();
   initTE({ Lightbox });
 
-  function toTitleCase(str) {
+  const toTitleCase = (str) => {
     return str.replace(/\w\S*/g, function (txt) {
       return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();
     });
-  }
+  };
 
   useEffect(() => {
     if (router.isReady) {
@@ -33,10 +33,6 @@ export default function Page() {
         `*[_type == "artist" && name == "${artist}"].bio`
       );
 
-      // let QUERY = encodeURIComponent({
-      //   artwork: QUERY_COLLECTION,
-      //   bio: QUERY_BIO,
-      // });
       // Compose the URL for your project's endpoint and add the query
       let URL_COLLECTION = `https://${PROJECT_ID}.api.sanity.io/v2021-10-21/data/query/${DATASET}?query=${QUERY_COLLECTION}`;
       let URL_BIO = `https://${PROJECT_ID}.api.sanity.io/v2021-10-21/data/query/${DATASET}?query=${QUERY_BIO}`;
@@ -56,7 +52,7 @@ export default function Page() {
           setBio(res.result[0]);
         });
     }
-  }, [router.isReady]);
+  }, [router.isReady, router.query.artist]);
 
   return (
     <>

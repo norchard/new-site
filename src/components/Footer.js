@@ -4,7 +4,7 @@ import Link from "next/link";
 
 export default function Footer() {
   return (
-    <footer className="bg-slate-200 p-10 text-white grid grid-cols-12">
+    <footer className="mt-28 bg-slate-200 p-10 text-white grid grid-cols-12">
       <div className="col-span-2 text-slate-900">
         <Link href="/">
           <Image
@@ -33,11 +33,11 @@ export default function Footer() {
       </div>
       <div className="col-span-1 text-slate-900">
         <nav>
-          <Link href="/">About</Link>
+          <Link href="/about">About</Link>
           <br />
-          <Link href="/">Artists</Link>
+          <Link href="/artists">Artists</Link>
           <br />
-          <Link href="/">Contact</Link>
+          <Link href="/contact">Contact</Link>
         </nav>
       </div>
       <div className="col-span-6 text-slate-900"></div>
