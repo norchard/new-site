@@ -1,8 +1,7 @@
 import React, { Fragment, useState, useEffect } from "react";
-import Image from "next/image";
-import { Inter } from "next/font/google";
 import ArtistTile from "@/components/ArtistTile";
 import Head from "next/head";
+import { useRouter } from "next/router";
 
 export default function Artists() {
   const [artists, setArtists] = useState([]);
