@@ -20,7 +20,7 @@ export default function Home() {
               We&apos;re now at the Silos at Sawyer Yards
             </h2>
             <Link className="text-center m-auto" href="/contact">
-              <button className="mt-10 pt-4 pb-4 pr-10 pl-10 bg-slate-800 text-xl rounded-full text-white hover:bg-slate-700">
+              <button className="mt-10 pt-4 pb-4 pr-10 pl-10 bg-slate-800 xs:text-md md:text-xl rounded-full text-white hover:bg-slate-700">
                 Come Visit Us
               </button>
             </Link>

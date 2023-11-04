@@ -6,7 +6,7 @@ export default function Nav() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <header className=" pb-20 relative">
+    <header className="m-0 pb-20 relative">
       {menuOpen && (
         <div className="w-full text-center bg-white menu md:flex float-right">
           <Link
