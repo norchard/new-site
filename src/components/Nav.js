@@ -34,7 +34,7 @@ export default function Nav() {
       )}
       <Link href="/">
         <Image
-          className="m-11 float-left"
+          className="xs:m-5 md:m-11 float-left"
           src="/Zoya_logo.png"
           alt="zoya logo"
           width={200}
@@ -64,7 +64,7 @@ export default function Nav() {
       </div>
       <div className="xs:flex float-right md:hidden">
         <button
-          class="m-14 navbar-burger flex items-center"
+          class="m-8 navbar-burger flex items-center"
           onClick={() => setMenuOpen(!menuOpen)}
         >
           <svg
