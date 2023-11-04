@@ -4,11 +4,11 @@ import Link from "next/link";
 
 export default function Footer() {
   return (
-    <footer className="w-full mx-auto max-w-screen-xl p-4 xs:text-center md:text-left md:flex md:items-top md:justify-between">
+    <footer className="bg-slate-200 w-full mx-auto p-4 xs:text-center md:text-left md:flex md:items-top md:justify-between">
       <div className=" md:col-span-2 text-slate-900 px-5">
         <Link href="/">
           <Image
-            className="xs:mx-auto md:mx-0"
+            className="xs:mx-auto md:mx-0 xs:pt-5 md:pt-0"
             src="/Zoya_logo.png"
             alt="zoya logo"
             width={150}
@@ -41,7 +41,7 @@ export default function Footer() {
           <Link href="/contact">Contact</Link>
         </nav>
       </div>
-      <div className="text-slate-900 flex mx-auto">
+      <div className="text-slate-900 flex lg:float-right xs:pt-10 md:pt-0 xs:justify-center md:justify-right mx-auto">
         <Link href="/">
           <Image
             src="/icons8-facebook.svg"

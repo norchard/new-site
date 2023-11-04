@@ -1,8 +1,10 @@
 import Image from "next/image";
-import React from "react";
+import React, { useState } from "react";
 import Link from "next/link";
 
 export default function Nav() {
+  const [menuOpen, setMenuOpen] = useState(false);
+
   return (
     <header className="p-11 pb-20 relative">
       <Link href="/">
@@ -15,7 +17,7 @@ export default function Nav() {
           priority={true}
         />
       </Link>
-      <div className="menu md:menu-horizontal flex float-right">
+      <div className="xs:hidden menu md:menu-horizontal md:flex float-right">
         <Link
           className="text-xl mt-5 mr-6 text-gray-500 hover:text-gray-800"
           href="/about"
@@ -35,6 +37,46 @@ export default function Nav() {
           Contact
         </Link>
       </div>
+      <div className="xs:flex float-right md:hidden">
+        <button
+          class="navbar-burger flex items-center"
+          onClick={() => setMenuOpen(!menuOpen)}
+        >
+          <svg
+            class="block h-6 w-6 fill-current"
+            viewBox="0 0 20 20"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <title>Mobile menu</title>
+            <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
+          </svg>
+        </button>
+      </div>
+      {menuOpen && (
+        <div className="w-full text-center bg-white menu md:flex float-right">
+          <Link
+            onClick={() => setMenuOpen(false)}
+            className="text-xl mt-5 mb-5 mr-6 text-gray-500 hover:text-gray-800"
+            href="/about"
+          >
+            About
+          </Link>
+          <Link
+            onClick={() => setMenuOpen(false)}
+            className="text-xl mt-5 mb-5 mr-6 text-gray-500 hover:text-gray-800"
+            href="/artists"
+          >
+            Artists
+          </Link>
+          <Link
+            onClick={() => setMenuOpen(false)}
+            className="text-xl mt-5 mb-5 mr-6 text-gray-500 hover:text-gray-800"
+            href="/contact"
+          >
+            Contact
+          </Link>
+        </div>
+      )}
     </header>
   );
 }
