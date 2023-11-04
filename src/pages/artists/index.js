@@ -37,7 +37,7 @@ export default function Artists() {
           Our Artists
         </h1>
       </div>
-      <div className="xs:p-5 md:p-32 pt-12 grid xs:grid-cols-2 sm:gap-2 md:grid-cols-3 md:gap-4 lg:grid-cols-4 lg:gap-6">
+      <div className="xs:p-5 md:p-32 pt-12 grid xs:grid-cols-2 xs:gap-1/2 md:grid-cols-3 md:gap-4 lg:grid-cols-4 lg:gap-6">
         {artists.map((artist, id) => (
           <ArtistTile key={id} artist={artist.name} image={artist.image} />
         ))}

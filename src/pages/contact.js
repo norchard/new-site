@@ -15,14 +15,14 @@ export default function Contact() {
           Visit Us Any Second Saturday!
         </h1>
       </div> */}
-      <div className=" flex flex-wrap flex-col-reverse lg:flex-row mt-12 lg:mt-28">
+      <div className="flex flex-wrap flex-col-reverse lg:flex-row mt-12 lg:mt-28">
         <div className="mb-32 sm:w-full lg:w-1/2">
           {/* <div className="flex-1 w-full pt-20"> */}
           <Map />
         </div>
-        <div className="sm:w-full lg:w-1/2 text-center lg:text-left lg:pt-10">
+        <div className="xs:w-full md:w-1/2 text-center lg:text-left lg:pt-10">
           {/* <div className="w-full flex-1 text-xl pl-10 pt-28 pr-60"> */}
-          <h1 className="typeface-seasons text-6xl lg:text-7xl m-auto pb-8">
+          <h1 className="typeface-seasons xs:text-4xl md:text-6xl lg:text-7xl m-auto pb-8">
             Visit Us Any <br />
             Second Saturday!
           </h1>
