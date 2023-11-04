@@ -15,7 +15,7 @@ export default function Nav() {
           priority={true}
         />
       </Link>
-      <nav className="flex float-right">
+      <div className="menu md:menu-horizontal flex float-right">
         <Link
           className="text-xl mt-5 mr-6 text-gray-500 hover:text-gray-800"
           href="/about"
@@ -28,19 +28,13 @@ export default function Nav() {
         >
           Artists
         </Link>
-        {/* <Link
-          className="text-xl mt-5 mr-6 text-gray-500 hover:text-gray-800"
-          href="/handbags"
-        >
-          Handbags
-        </Link> */}
         <Link
           className="text-xl mt-5 mr-6 text-gray-500 hover:text-gray-800"
           href="/contact"
         >
           Contact
         </Link>
-      </nav>
+      </div>
     </header>
   );
 }

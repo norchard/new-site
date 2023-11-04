@@ -4,23 +4,24 @@ import Link from "next/link";
 
 export default function Footer() {
   return (
-    <footer className="bg-slate-200 p-10 text-white grid grid-cols-12">
-      <div className="col-span-2 text-slate-900">
+    <footer className="w-full mx-auto max-w-screen-xl p-4 xs:text-center md:text-left md:flex md:items-top md:justify-between">
+      <div className=" md:col-span-2 text-slate-900 px-5">
         <Link href="/">
           <Image
-            className="float-left"
+            className="xs:mx-auto md:mx-0"
             src="/Zoya_logo.png"
             alt="zoya logo"
             width={150}
             height={10}
           />
         </Link>
-        <br />
-        <p>zoyatommy@gmail.com</p>
-        <p>(347) 461– 6543</p>
+        <div>
+          <p>zoyatommy@gmail.com</p>
+          <p>(347) 461– 6543</p>
+        </div>
         <br />
       </div>
-      <div className="col-span-2 text-slate-900">
+      <div className="col-span-2 text-slate-900 px-5">
         <p>
           1502 Sawyer St
           <br />
@@ -31,7 +32,7 @@ export default function Footer() {
           Houston, TX 77007
         </p>
       </div>
-      <div className="col-span-1 text-slate-900">
+      <div className="col-span-1 text-slate-900 px-5 xs:pt-5 md:pt-0">
         <nav>
           <Link href="/about">About</Link>
           <br />
@@ -40,11 +41,9 @@ export default function Footer() {
           <Link href="/contact">Contact</Link>
         </nav>
       </div>
-      <div className="col-span-6 text-slate-900"></div>
-      <div className="col-span-1 text-slate-900">
+      <div className="text-slate-900 flex mx-auto">
         <Link href="/">
           <Image
-            className="float-left"
             src="/icons8-facebook.svg"
             alt="zoya logo"
             width={50}
@@ -53,7 +52,6 @@ export default function Footer() {
         </Link>
         <Link href="https://instagram.com/zoyapkemp">
           <Image
-            className="float-left"
             src="/icons8-instagram.svg"
             alt="zoya logo"
             width={50}
@@ -62,5 +60,63 @@ export default function Footer() {
         </Link>
       </div>
     </footer>
+    // <footer className="bg-slate-200 p-10 text-white grid md:grid-cols-6 lg:grid-cols-12">
+    //   <div className=" md:col-span-2 text-slate-900">
+    //     <Link href="/">
+    //       <Image
+    //         className="float-left"
+    //         src="/Zoya_logo.png"
+    //         alt="zoya logo"
+    //         width={150}
+    //         height={10}
+    //       />
+    //     </Link>
+    //     <br />
+    //     <p>zoyatommy@gmail.com</p>
+    //     <p>(347) 461– 6543</p>
+    //     <br />
+    //   </div>
+    //   <div className="col-span-2 text-slate-900">
+    //     <p>
+    //       1502 Sawyer St
+    //       <br />
+    //       Studio #136
+    //       <br />
+    //       The Silos at Sawyer Yards
+    //       <br />
+    //       Houston, TX 77007
+    //     </p>
+    //   </div>
+    //   <div className="col-span-1 text-slate-900">
+    //     <nav>
+    //       <Link href="/about">About</Link>
+    //       <br />
+    //       <Link href="/artists">Artists</Link>
+    //       <br />
+    //       <Link href="/contact">Contact</Link>
+    //     </nav>
+    //   </div>
+    //   <div className="col-span-6 text-slate-900"></div>
+    //   <div className="col-span-1 text-slate-900">
+    //     <Link href="/">
+    //       <Image
+    //         className="float-left"
+    //         src="/icons8-facebook.svg"
+    //         alt="zoya logo"
+    //         width={50}
+    //         height={20}
+    //       />
+    //     </Link>
+    //     <Link href="https://instagram.com/zoyapkemp">
+    //       <Image
+    //         className="float-left"
+    //         src="/icons8-instagram.svg"
+    //         alt="zoya logo"
+    //         width={50}
+    //         height={20}
+    //       />
+    //     </Link>
+    //   </div>
+    // </footer>
   );
 }

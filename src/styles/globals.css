@@ -4,6 +4,8 @@
 
 body {
   font-family: "ff-real-text-pro", sans-serif;
+  background-color: white;
+  color: rgb(60, 60, 60);
 }
 
 button {
