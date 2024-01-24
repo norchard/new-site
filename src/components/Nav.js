@@ -21,7 +21,7 @@ export default function Nav() {
             className="text-xl mt-5 mb-5 mr-6 text-gray-500 hover:text-gray-800"
             href="/artists"
           >
-            Artists
+            Secondary Market
           </Link>
           <Link
             onClick={() => setMenuOpen(false)}
@@ -53,7 +53,7 @@ export default function Nav() {
           className="text-xl mt-5 mr-6 text-gray-500 hover:text-gray-800"
           href="/artists"
         >
-          Artists
+          Secondary Market
         </Link>
         <Link
           className="text-xl mt-5 mr-6 text-gray-500 hover:text-gray-800"
@@ -64,11 +64,11 @@ export default function Nav() {
       </div>
       <div className="xs:flex float-right md:hidden">
         <button
-          class="m-8 navbar-burger flex items-center"
+          className="m-8 navbar-burger flex items-center"
           onClick={() => setMenuOpen(!menuOpen)}
         >
           <svg
-            class="block h-6 w-6 fill-current"
+            className="block h-6 w-6 fill-current"
             viewBox="0 0 20 20"
             xmlns="http://www.w3.org/2000/svg"
           >

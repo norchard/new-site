@@ -34,7 +34,7 @@ export default function Artists() {
       </Head>
       <div className="xs:mt-10 md:mt-20 pt-12 flex justify-center">
         <h1 className="typeface-seasons xs:text-4xl md:text-7xl m-auto">
-          Our Artists
+          Secondary Market
         </h1>
       </div>
       <div className="xs:p-5 md:p-32 pt-12 grid xs:grid-cols-2 xs:gap-1/2 md:grid-cols-3 md:gap-4 lg:grid-cols-4 lg:gap-6">

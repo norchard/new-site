@@ -23,8 +23,8 @@ export default function Contact() {
         <div className="xs:w-full md:w-1/2 text-center lg:text-left lg:pt-10">
           {/* <div className="w-full flex-1 text-xl pl-10 pt-28 pr-60"> */}
           <h1 className="typeface-seasons xs:text-4xl md:text-6xl lg:text-7xl m-auto pb-8">
-            Visit Us Any <br />
-            Second Saturday!
+            Visit us any time <br />
+            or on a Second Saturday!
           </h1>
           <Link
             target="_blank"
